@@ -1,0 +1,163 @@
+
+EMAIL                PERSONNAME           PERSONADDRESS       
+-------------------- -------------------- --------------------
+sam@ou.edu           Sam                  740 St              
+ryan@ou.edu          Ryan                 610 Ave             
+amy@ou.edu           Amy                  71 Paseo            
+julia@ou.edu         Julia                618 Plaza           
+sofia@ou.edu         Sofia                714 Cir             
+valter@ou.edu        Valter               23 St               
+brandon@ou.edu       Brandon              140 St              
+hunt@ou.edu          Hunt                 71 Plaza            
+rock@ou.edu          Rock                 9 Ave               
+sai@ou.edu           Sai                  2 Blvd              
+
+10 rows selected. 
+
+
+EMAIL                GENRE                AUTHORID            
+-------------------- -------------------- --------------------
+sam@ou.edu           Mystery              1                   
+julia@ou.edu         Fiction              2                   
+hunt@ou.edu          Mystery              3                   
+brandon@ou.edu       Comedy               4                   
+
+
+EMAIL                DETAILS             
+-------------------- --------------------
+amy@ou.edu           school              
+rock@ou.edu          work                
+sai@ou.edu           personal            
+valter@ou.edu        personal            
+sofia@ou.edu         work                
+ryan@ou.edu          work                
+
+6 rows selected. 
+
+
+EMAIL                CUSTOMERPHONENUMBER
+-------------------- -------------------
+amy@ou.edu                          7178
+rock@ou.edu                         6811
+ryan@ou.edu                         2121
+ryan@ou.edu                         3343
+ryan@ou.edu                         6061
+sai@ou.edu                          6969
+sofia@ou.edu                        2145
+sofia@ou.edu                        4521
+valter@ou.edu                        918
+valter@ou.edu                        919
+
+10 rows selected. 
+
+
+PUBLISHERNAME        ADDRESS              PUBLISHERPHONENUMBER
+-------------------- -------------------- --------------------
+Cambridge            21 St                                1421
+Oxford               2 Elm                                8824
+
+
+PUBLISHERNAME        INKUSED              PRINTINGCOST
+-------------------- -------------------- ------------
+Cambridge            Black                           9
+Cambridge            Multi                          20
+Oxford               Black                           8
+Oxford               Multi                          15
+
+
+    BOOKID EMAIL                  BOOKYEAR TITLE               
+---------- -------------------- ---------- --------------------
+         1 sam@ou.edu                 2010 Holmes              
+         2 julia@ou.edu               2015 Space Monkeys       
+         3 hunt@ou.edu                2009 Kidnaps             
+         4 hunt@ou.edu                2015 FBI                 
+         5 brandon@ou.edu             2017 Cats                
+         6 brandon@ou.edu             2016 Dogs                
+         7 brandon@ou.edu             2006 Babies              
+
+7 rows selected. 
+
+
+EMAIL                    BOOKID      PRICE
+-------------------- ---------- ----------
+amy@ou.edu                    7         13
+rock@ou.edu                   1         20
+sai@ou.edu                    3          9
+valter@ou.edu                 2         10
+sofia@ou.edu                  1         24
+sofia@ou.edu                  5         25
+ryan@ou.edu                   4          7
+ryan@ou.edu                   3         14
+
+8 rows selected. 
+
+
+    BOOKID PUBLISHERNAME       
+---------- --------------------
+         1 Oxford              
+         2 Oxford              
+         3 Cambridge           
+         4 Oxford              
+         5 Cambridge           
+         6 Cambridge           
+         7 Oxford              
+
+7 rows selected. 
+
+
+PERSONNAME          
+--------------------
+Sofia
+Rock
+
+
+PERSONNAME          
+--------------------
+Sofia
+Rock
+
+
+PERSONNAME           GENRE               
+-------------------- --------------------
+Sam                  Mystery             
+Julia                Fiction             
+Brandon              Comedy              
+Hunt                 Mystery             
+
+
+AUTHORID             GENRE               
+-------------------- --------------------
+3                    Mystery             
+4                    Comedy              
+
+
+EMAIL                SUM(PRICE)
+-------------------- ----------
+rock@ou.edu                  20
+sofia@ou.edu                 49
+amy@ou.edu                   13
+sai@ou.edu                    9
+valter@ou.edu                10
+ryan@ou.edu                  21
+
+6 rows selected. 
+
+
+TITLE               
+--------------------
+Kidnaps
+Cats
+Dogs
+
+
+Error starting at line : 201 in command -
+update Person set Email = 775 where Email = 'sam@ou.edu'
+Error report -
+ORA-02292: integrity constraint (KADI0000.SYS_C00170017) violated - child record found
+
+
+Error starting at line : 206 in command -
+insert into Buys values('ivan@ou.edu', 5, 20)
+Error report -
+ORA-02291: integrity constraint (KADI0000.SYS_C00170028) violated - parent key not found
+

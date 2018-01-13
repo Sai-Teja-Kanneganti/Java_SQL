@@ -1,0 +1,125 @@
+
+       AID ANAME                       AGE NUMBER_OF_PUBLICATION
+---------- -------------------- ---------- ---------------------
+         1 Morgan                       60                    26
+         2 Cruz                         38                     8
+         3 Adams                        30                     5
+         4 Perry                        65                    24
+         5 Derek                        50                    10
+         6 Derek                        32                     4
+         7 Lewis                        70                    20
+         8 Alice                        47                     7
+
+8 rows selected. 
+
+
+       TID TNAME                    SALARY
+---------- -------------------- ----------
+       101 Mark                      58000
+       102 Black                     25000
+       103 Ed                        30000
+       104 Mark                      82000
+
+
+BTITLE                    CATEGORY             RELEASE_YEAR    EDITION        TID
+------------------------- -------------------- ------------ ---------- ----------
+Jurassic Park             Novel                        1984          8        101
+The Power of Habit        Business                     2001         10        102
+Heidi                     Children                     1960          9        104
+Anna Karenina             Novel                        1994         20        103
+War and Peace             Novel                        1968         17        104
+The Lion King             Children                     1990          5        103
+Rich Dad                  Business                     1997          9        103
+The Goal                  Business                     1963         14        103
+Rework                    Business                     2003          6        102
+Beautiful Mind            Phycology                    1979          3        102
+
+10 rows selected. 
+
+
+       AID BTITLE                   
+---------- -------------------------
+         1 Anna Karenina            
+         1 Heidi                    
+         2 Rework                   
+         3 The Lion King            
+         4 Jurassic Park            
+         4 Rich Dad                 
+         5 Rework                   
+         7 The Goal                 
+         8 Rework                   
+         8 The Power of Habit       
+
+10 rows selected. 
+
+
+       CID CNAME                NUMBER_OF_ORDERS CLEVEL              
+---------- -------------------- ---------------- --------------------
+       200 John                               10 Children            
+       201 Emily                               7 Adult               
+       202 Ashely                             19 Adult               
+       203 Edward                              3 Children            
+       204 Wu                                 12 Adult               
+
+
+       CID BTITLE                   
+---------- -------------------------
+       200 Anna Karenina            
+       200 The Lion King            
+       201 Anna Karenina            
+       202 War and Peace            
+       203 War and Peace            
+       204 Heidi                    
+       204 Rework                   
+       204 The Lion King            
+
+8 rows selected. 
+
+
+CNAME                CLEVEL              
+-------------------- --------------------
+John                 Children            
+Wu                   Adult               
+
+
+BTITLE                    CATEGORY                EDITION
+------------------------- -------------------- ----------
+War and Peace             Novel                        17
+
+
+ANAME               
+--------------------
+Cruz
+Derek
+Alice
+
+
+TNAME               
+--------------------
+Black
+Ed
+
+
+CATEGORY               COUNT(*)
+-------------------- ----------
+Children                      2
+
+
+       AID ANAME               
+---------- --------------------
+         8 Alice               
+
+
+CATEGORY             AVG(EDITION)
+-------------------- ------------
+Phycology                       3
+Children                        7
+Business                     9.75
+Novel                          15
+
+
+1 row updated.
+
+
+2 rows deleted.
+
